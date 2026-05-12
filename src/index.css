@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.text{
+  font-size: 16px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Soft Mint Blue (Clean & Modern) */
+.gradient {
+  background: linear-gradient(
+    135deg,
+    #a1ffce 0%,
+    #faffd1 50%,
+    #4baabf 100%
+  );
+}
+.input-style {
+  @apply w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500;
+}
+
+
+
+@keyframes modalOpen {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-modalOpen {
+  animation: modalOpen 0.35s ease;
+}
+
+    {/* Bottom Section */}
+      {/* <div className="max-w-7xl mx-auto px-6 mt-20 pb-20">
+        <div className="bg-black text-white rounded-3xl p-8 md:p-12 grid md:grid-cols-3 gap-8 text-center">
+          <div>
+            <h2 className="text-4xl font-bold text-yellow-400">24/7</h2>
+            <p className="mt-2 text-gray-300">Available Support</p>
+          </div>
+
+          <div>
+            <h2 className="text-4xl font-bold text-yellow-400">100%</h2>
+            <p className="mt-2 text-gray-300">Safe & Comfortable</p>
+          </div>
+
+          <div>
+            <h2 className="text-4xl font-bold text-yellow-400">Best</h2>
+            <p className="mt-2 text-gray-300">Price Guarantee</p>
+          </div>
+        </div>
+      </div> */}
