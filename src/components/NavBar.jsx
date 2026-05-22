@@ -333,13 +333,34 @@ const NavBar = () => {
                   </div>
 
                   {mobileDomestic && (
-                    <div className="pl-3 text-gray-600"
-                      onClick={()=>navigate("/domesticTours")}
-                    >
-                      {/* <div>Goa</div>
-                      <div>Kashmir</div>
-                      <div>Manali</div> */}
-                    
+                    <div className="pl-3 mt-3 grid grid-cols-1 gap-3 text-sm text-gray-300">
+                      <div className="flex gap-2 items-center">
+                        Goa <span className="bg-red-200 text-red-700 text-[10px] px-2 rounded-full">TRENDING</span>
+                      </div>
+
+                      <div className="flex gap-2 items-center">
+                        Kashmir <span className="bg-pink-200 text-pink-700 text-[10px] px-2 rounded-full">Honeymoon</span>
+                      </div>
+
+                      <div>Manali</div>
+                      <div>Rajasthan</div>
+                      <div>Kerala</div>
+                      <div>Andaman</div>
+                      <div>Udaipur</div>
+                      <div>Shimla</div>
+                      <div>Leh Ladakh</div>
+                      <div>Andaman Nicobar Island</div>
+                      <div>Lakshadweep</div>
+
+                      <div
+                        onClick={() => {
+                          navigate("/domesticTours");
+                          setMenuOpen(false);
+                        }}
+                        className="text-blue-400 font-semibold cursor-pointer"
+                      >
+                        Explore More Destination
+                      </div>
                     </div>
                   )}
 
@@ -350,16 +371,43 @@ const NavBar = () => {
                     International
                   </div>
 
-                  {mobileInternational && (
-                    <div className="pl-3 text-gray-700 text-sm"
-                      onClick={()=>navigate("/internationalTours")}
-                    >
-                      {/* <div>Dubai</div>
+                 {mobileInternational && (
+                    <div className="pl-3 mt-3 grid grid-cols-1 gap-3 text-sm text-gray-300">
+                      <div className="flex gap-2 items-center">
+                        Dubai <span className="bg-red-200 text-red-700 text-[10px] px-2 rounded-full">TRENDING</span>
+                      </div>
+
+                      <div className="flex gap-2 items-center">
+                        Maldives <span className="bg-pink-200 text-pink-700 text-[10px] px-2 rounded-full">HONEYMOON</span>
+                      </div>
+
                       <div>Thailand</div>
-                      <div>Singapore</div> */}
+                      <div>Singapore</div>
+                      <div>Malaysia</div>
+
+                      <div className="flex gap-2 items-center">
+                        Bali <span className="bg-purple-200 text-purple-700 text-[10px] px-2 rounded-full">Popular</span>
+                      </div>
+
+                      <div>Europe</div>
+                      <div>Switzerland</div>
+                      <div>Sri-lanka</div>
+                      <div>Vietnam</div>
+                      <div>Australia</div>
+                      <div>South-Africa</div>
+                      <div>Mauritius</div>
+
+                      <div
+                        onClick={() => {
+                          navigate("/internationalTours");
+                          setMenuOpen(false);
+                        }}
+                        className="text-blue-400 font-semibold cursor-pointer"
+                      >
+                        Explore More Destination
+                      </div>
                     </div>
                   )}
-
                 </div>
               )}
             </div>
