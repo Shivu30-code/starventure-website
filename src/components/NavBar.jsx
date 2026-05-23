@@ -239,11 +239,9 @@ const NavBar = () => {
                       <div>Andaman Nicobar Island</div>
                       <div>LakshwaDeep</div>
                       <div
-                        onClick={()=>navigate("/domesticTours")}
-                      >
-                        
+                        onClick={()=>navigate("/domesticTours")}>
                         Explore More Destination
-                        </div>
+                      </div>
 
                     </div>
                   </div>
@@ -278,7 +276,10 @@ const NavBar = () => {
                       <div>Australia</div>
                       <div>South-Africa</div>
                       <div>Mauritis</div>
-                      <div>Explore More Destination</div>
+                      <div
+                        onClick={()=>navigate("/internationalTours")}>
+                        Explore More Destination
+                      </div>
                     </div>
                   </div>
                 )}

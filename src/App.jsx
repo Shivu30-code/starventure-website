@@ -25,11 +25,18 @@ import BookingService from './pages/BookingService';
 import ComingSoon from './components/ComingSoon';
 import Employment from './pages/Employment';
 import Immigration from './pages/Immigration';
+import BookingPage from './pages/BookingPage';
+import InternationalTours from './pages/InternationalTours';
+import TermsConditions from './components/TermsConditions';
+import ScrollToTop from "./components/ScrollToTop";
+import RefundCancellation from './components/RefundCancellation';
+import FAQ from './components/FAQ';
 
 const App = () => {
   return (
     <>
       <div className="overflow-x-hidden text-white bg-black">
+        <ScrollToTop/>
 
         {/* <NavBar/> */}
 
@@ -52,7 +59,7 @@ const App = () => {
           </Route> 
           <Route path='/explorePackages' element={<ExplorePackages/>} />
           <Route path='/domesticTours' element={<DomesticTours/>} />
-          {/* <Route path='/domesticTours' element={<DomesticTours/>} /> */}
+          <Route path='/internationalTours' element={<InternationalTours/>} />
           <Route path='/transport' element={<Transport/>} />
           <Route path='/transportBus' element={<TransportBus/>} />
           <Route path='/transportCar' element={<TransportCar/>} />
@@ -63,6 +70,10 @@ const App = () => {
           <Route path='/comingSoon' element={<ComingSoon/>} />
           <Route path='/employment' element={<Employment/>} />
           <Route path='/immigration' element={<Immigration/>} />
+          <Route path="/booking" element={<BookingPage />} />
+          <Route path="/terms" element={<TermsConditions />} />
+          <Route path="/cancellation" element={<RefundCancellation />} />
+          <Route path="/faq" element={<FAQ />} />
           <Route element={<AuthLayout/>}/>
         </Routes>
 

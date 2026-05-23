@@ -76,13 +76,13 @@ const TransportBus = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 px-6 py-16 gradient">
-        <button
-            onClick={() => navigate("/transport")}
-            className="fixed top-4 right-5 z-50 w-8 h-8 rounded-full bg-white shadow-lg border border-gray-200
-            hover:bg-gray-400 hover:text-white flex items-center justify-center transition-all duration-300 cursor-pointer"
-        >
-            <X size={22} />
-        </button>
+      <button
+        onClick={() => navigate("/transport")}
+        className="fixed top-4 right-5 z-50 w-8 h-8 rounded-full bg-white shadow-lg border border-gray-200
+        hover:bg-gray-400 hover:text-white flex items-center justify-center transition-all duration-300 cursor-pointer"
+      >
+        <X size={22} />
+      </button>
 
       <div className="text-center mb-16">
         <span className="text-yellow-600 text-5xl font-semibold tracking-[5px] uppercase font-serif">

@@ -1,4 +1,5 @@
 import  star  from "../assets/logo.png";
+import { Link } from "react-router-dom"; 
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
@@ -20,7 +21,7 @@ const Footer = () => {
 
               <h2 className="text-2xl font-bold text-white">
                 Star Venture Tourism
-              </h2>
+              </h2> 
             </div>
 
             <p className="mt-4 text-gray-300 leading-relaxed text">
@@ -92,77 +93,95 @@ const Footer = () => {
 
        <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] border-t  border-white/20 mt-12 pt-10"></div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-sm text-gray-300 ">
+        <div className="grid grid-cols-2  md:grid-cols-6 gap-10 ml-15 text-sm text-gray-300 ">
 
-            <div>
-                <h3 className="text-white font-semibold mb-3">Quick Links</h3>
-                {/* <div className="flex gap-4 ">
-                  <a href="/">Home</a>
-                  <a href="/">About-us</a>
-                  <a href="/">Services</a>
-                  <a href="/">Contacts</a>
-                </div> */}
-                <ul className="space-y-3">
-                <li>Home</li>   
-                <li>About us</li>
-                <li>Services</li>
-                <li>Contact</li>
-                </ul>
-            </div>
+          <div>
+            <h3 className="text-white font-semibold mb-3">Quick Links</h3>
+              <ul className="space-y-3">
+                <li>
+                  <Link to="/" className="hover:text-blue-400 transition duration-300">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/about" className="hover:text-blue-400 transition duration-300">
+                    About us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/exploreServices" className="hover:text-blue-400 transition duration-300">
+                   Services
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="hover:text-blue-400 transition duration-300">
+                    Contact
+                  </Link>
+                  </li>
+              </ul>
+          </div>
 
-            <div>
-                <h3 className="text-white font-semibold mb-3">Policy</h3>
-                <ul className="space-y-3">
-                <li>Privacy Policy</li>
-                <li>FAQ</li>
-                <li>Terms & Conditions</li>
-                <li>Cancellation Policy</li>
-                </ul>
-            </div>
+          <div>
+            <h3 className="text-white font-semibold mb-3">Policy</h3>
+              <ul className="space-y-3">
+                <li>
+                  <Link to="/privacy" className="hover:text-blue-400 transition duration-300">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/faq" className="hover:text-blue-400 transition duration-300">
+                    FAQ
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/terms" className="hover:text-blue-400 transition duration-300">
+                    Terms & Conditions
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/cancellation" className="hover:text-blue-400 transition duration-300">
+                    Cancellation Policy
+                  </Link>
+                </li>
+              </ul>
+          </div>
 
-            <div>
-              <h3 className="text-white font-semibold mb-3">Talk to Us</h3>
-              <div className="space-y-2.5">
-                <p>+917874041324</p>
-                {/* <a
-                  href="mailto:admin@starventuregroups.com"
-                  className="hover:text-yellow-500 transition"
-                  >
-                  admin@starventuregroups.com
-                </a><br/> */}
-                <p> admin@starventuregroups.com</p>
-                <p> Valsad, Gujarat</p>
-              </div>
+          <div>
+            <h3 className="text-white font-semibold mb-3">Talk to Us</h3>
+            <div className="space-y-2.5">
+              <p>+917894563210</p>
+              <p> admin@starventuregroups.com</p>
+              <p> Valsad, Gujarat</p>
             </div>
+          </div>
           
-            <div>
-                <h3 className="text-white font-semibold mb-3">Socials</h3>
-                <div className=" gap-3 flex">
-                    <span 
-                        className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#2a6392] cursor-pointer">
-                        <FacebookIcon/>
-                    </span>
-                    <span 
-                        className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600 transition cursor-pointer">
-                        <InstagramIcon/>
-                    </span>
-                    <span 
-                      className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 
-                      hover:bg-gradient-to-r hover:from-black hover:via-gray-800 hover:to-gray-600 
-                      hover:text-white transition duration-300 cursor-pointer">
-                      <XIcon/>
-                    </span>
-                </div>
+          <div className="ml-12">
+            <h3 className="text-white font-semibold mb-3">Socials</h3>
+            <div className=" gap-3 flex">
+              <span 
+                className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#2a6392] cursor-pointer">
+                <FacebookIcon/>
+              </span>
+              <span 
+                className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600 transition cursor-pointer">
+                <InstagramIcon/>
+              </span>
+              <span 
+                className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 
+                hover:bg-gradient-to-r hover:from-black hover:via-gray-800 hover:to-gray-600 
+                hover:text-white transition duration-300 cursor-pointer">
+                  <XIcon/>
+              </span>
             </div>
-
+          </div>
         </div>
 
-       <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] border-t  border-white/20 mt-20 pt-5 text-center">
+       <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] border-t  border-white/20 mt-12 pt-6 text-center">
          <p className="">
              © {new Date().getFullYear()} Star Venture Tourism. All Rights Reserved.
          </p>
         </div>
-
       </div>
     </footer>
   );

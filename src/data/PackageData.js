@@ -221,7 +221,7 @@ export const Popularpackages = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1521334884684-d80222895322?q=80&w=1200&auto=format&fit=crop",
+      "https://images.pexels.com/photos/37452357/pexels-photo-37452357.jpeg",
     title: "Rishikesh",
     price: "₹6,999",
     days: "2 Days / 1 Night",
@@ -229,7 +229,7 @@ export const Popularpackages = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
+      "https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg",
     title:"Maldives", 
     price: "₹49,999",
     days: "5 Days / 4 Nights",
