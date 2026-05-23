@@ -10,7 +10,7 @@ import TopDestination from './pages/TopDestination'
 import Footer from './components/Footer'
 import Enquiry from './components/Enquiry'
 import { Routes, Route } from 'react-router-dom'
-import PopularPackages from './components/PopularPackages'
+import PopularPackages from './pages/PopularPackages'
 import VideoBanner from './components/VideoBanner'
 import Newsletter from './components/NewsLetter'
 import ExplorePackages from './pages/ExplorePackages'
@@ -31,6 +31,7 @@ import TermsConditions from './components/TermsConditions';
 import ScrollToTop from "./components/ScrollToTop";
 import RefundCancellation from './components/RefundCancellation';
 import FAQ from './components/FAQ';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 const App = () => {
   return (
@@ -74,6 +75,7 @@ const App = () => {
           <Route path="/terms" element={<TermsConditions />} />
           <Route path="/cancellation" element={<RefundCancellation />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route element={<AuthLayout/>}/>
         </Routes>
 

@@ -47,7 +47,7 @@ const TermsConditions = () => {
 
             <div className="relative z-10 max-w-4xl mx-auto">
                 <p className="text-yellow-400 uppercase tracking-[4px] text-sm mb-4">
-                    Star Venture Group
+                    Star Venture Groups
                 </p>
 
                 <h1 className="text-4xl md:text-6xl font-bold mb-6">

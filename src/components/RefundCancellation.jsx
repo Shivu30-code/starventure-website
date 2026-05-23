@@ -15,7 +15,7 @@ const RefundCancellation = () => {
         </button>
         <div className="max-w-5xl mx-auto ">
             <p className="text-yellow-400 uppercase tracking-[4px] text-2xl mb-3 text-center">
-                Star Venture Tourism
+                Star Venture Groups
             </p>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">

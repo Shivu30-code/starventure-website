@@ -278,7 +278,11 @@ const TopDestination = () => {
                 navigate("/explorePackages");
                 window.scrollTo(0, 0);
               }}
-              className="min-w-[97%] sm:min-w-[45%] md:min-w-[25%] md:max-w-[20%] cursor-pointer group relative overflow-hidden shadow-xl rounded-b-[30px] rounded-t-[100px] md:rounded-b-[40px] md:rounded-t-[150px] transform transition-all duration-500 ease-in-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl before:absolute before:inset-0 before:rounded-b-[30px] md:before:rounded-b-[40px] before:rounded-t-[100px] md:before:rounded-t-[150px] before:bg-white/20 before:opacity-0 group-hover:before:opacity-100 before:transition animate-[fadeIn_0.6s_ease_forwards]"
+              className="min-w-[97%] sm:min-w-[45%] md:min-w-[25%] md:max-w-[20%] cursor-pointer group relative overflow-hidden shadow-xl rounded-b-[30px] rounded-t-[100px] md:rounded-b-[40px] md:rounded-t-[150px]
+               transform transition-all duration-500 ease-in-out hover:scale-105 hover:-translate-y-2 
+               hover:shadow-2xl before:absolute before:inset-0 before:rounded-b-[30px] md:before:rounded-b-[40px] 
+               before:rounded-t-[100px] md:before:rounded-t-[150px] before:bg-white/20 before:opacity-0 group-hover:before:opacity-100 
+               before:transition animate-[fadeIn_0.6s_ease_forwards]"
             >
               <img
                 src={item.img}

@@ -20,7 +20,7 @@ const Footer = () => {
               />
 
               <h2 className="text-2xl font-bold text-white">
-                Star Venture Tourism
+                Star Venture Groups
               </h2> 
             </div>
 
@@ -30,7 +30,7 @@ const Footer = () => {
             </p>
 
             <p className="mt-4 text-gray-300 leading-relaxed text">
-              At Star Venture Tourism, we are committed to delivering excellence across four key domains
+              At Star Venture Groups, we are committed to delivering excellence across four key domains
               that shape global connectivity and opportunities:
             </p>
 
