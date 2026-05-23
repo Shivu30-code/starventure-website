@@ -156,23 +156,51 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className="ml-12">
-            <h3 className="text-white font-semibold mb-3">Socials</h3>
+          <div className="ml-12  ">
+            <h3 className="text-white font-semibold mb-3 md:ml-2">Socials</h3>
             <div className=" gap-3 flex">
-              <span 
-                className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#2a6392] cursor-pointer">
-                <FacebookIcon/>
-              </span>
-              <span 
-                className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600 transition cursor-pointer">
-                <InstagramIcon/>
-              </span>
-              <span 
-                className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 
+
+              <a 
+                href="https://facebook.com/yourusername" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <span className="w-8 h-8 flex items-center justify-center 
+                rounded-full bg-white/10 shrink-0
+                hover:bg-[#2a6392] hover:scale-110
+                transition-all duration-300 cursor-pointer">
+                  <FacebookIcon className="w-5 h-5 text-white" />
+                </span>
+              </a>
+
+              <a 
+                href="https://instagram.com/starventuregroups" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <span  
+                  className="w-8 h-8 flex items-center justify-center 
+                  rounded-full bg-white/10 shrink-0
+                  hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600 
+                  transition-all duration-300 cursor-pointer"
+                >
+                  <InstagramIcon className="w-5 h-5 text-white" />
+                </span>
+              </a>
+
+              <a 
+                href="https://x.com/yourusername" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <span className="w-8 h-8 flex items-center justify-center 
+                rounded-full bg-white/10 shrink-0
                 hover:bg-gradient-to-r hover:from-black hover:via-gray-800 hover:to-gray-600 
-                hover:text-white transition duration-300 cursor-pointer">
-                  <XIcon/>
-              </span>
+                hover:scale-110
+                transition-all duration-300 cursor-pointer">
+                  <XIcon className="w-5 h-5 text-white" />
+                </span>
+              </a>
             </div>
           </div>
         </div>
