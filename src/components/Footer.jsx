@@ -2,6 +2,7 @@ import  star  from "../assets/logo.png";
 import { Link } from "react-router-dom"; 
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from "@mui/icons-material/YouTube";
 import XIcon from '@mui/icons-material/X';
 
 const Footer = () => {
@@ -155,16 +156,13 @@ const Footer = () => {
               <p> Valsad, Gujarat</p>
             </div>
           </div>
-          
-          <div className="ml-12  ">
-            <h3 className="text-white font-semibold mb-3 md:ml-2">Socials</h3>
-            <div className=" gap-3 flex">
 
-              <a 
-                href="https://facebook.com/yourusername" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
+          <div className="md:ml-8 px-2 ml-8">
+            <h3 className="text-white font-semibold mb-3 md:ml-2">Socials</h3>
+
+            <div className="flex flex-wrap gap-3">
+
+              <a href="https://facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
                 <span className="w-8 h-8 flex items-center justify-center 
                 rounded-full bg-white/10 shrink-0
                 hover:bg-[#2a6392] hover:scale-110
@@ -173,34 +171,40 @@ const Footer = () => {
                 </span>
               </a>
 
-              <a 
-                href="https://instagram.com/starventuregroups" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <span  
-                  className="w-8 h-8 flex items-center justify-center 
-                  rounded-full bg-white/10 shrink-0
-                  hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600 
-                  transition-all duration-300 cursor-pointer"
-                >
+              <a href="https://instagram.com/starventuregroups" target="_blank" rel="noopener noreferrer">
+                <span className="w-8 h-8 flex items-center justify-center 
+                rounded-full bg-white/10 shrink-0
+                hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600 
+                transition-all duration-300 cursor-pointer">
                   <InstagramIcon className="w-5 h-5 text-white" />
                 </span>
               </a>
 
-              <a 
-                href="https://x.com/yourusername" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
+
+              <a href="https://x.com/yourusername" target="_blank" rel="noopener noreferrer left-5">
                 <span className="w-8 h-8 flex items-center justify-center 
                 rounded-full bg-white/10 shrink-0
                 hover:bg-gradient-to-r hover:from-black hover:via-gray-800 hover:to-gray-600 
                 hover:scale-110
                 transition-all duration-300 cursor-pointer">
-                  <XIcon className="w-5 h-5 text-white" />
+                  <XIcon className="w-5 h-5 text-white"  />
                 </span>
               </a>
+              <a 
+  href="https://youtube.com/@yourchannel" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <span className="w-8 h-8 flex items-center justify-center 
+  rounded-full bg-white/10 shrink-0
+  hover:bg-red-600 hover:scale-110
+  transition-all duration-300 cursor-pointer">
+    
+    <YouTubeIcon className="w-5 h-5 text-white" />
+
+  </span>
+</a>
+
             </div>
           </div>
         </div>
