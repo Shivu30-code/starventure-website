@@ -1,15 +1,3 @@
-import dubaiVideo from "../assets/dubai.gif";
-import Goa from "../assets/goa.gif";
-import maldives from "../assets/maldives.gif";
-import bali from "../assets/Bali.gif";
-import paris from "../assets/paris.gif";
-import v from "../assets/v.gif";
-import Rajasthan from "../assets/Rajsthan.gif";
-import Kerala from "../assets/kerala.gif";
-import singa from "../assets/singapore.gif";
-import manali from "../assets/manali.gif";
-import coorg from "../assets/coorg.gif";
-
 export const categories = [
   "All Packages",
   "Weekend",
@@ -248,60 +236,52 @@ export const Popularpackages = [
 export const defaultData = [
   {
     name: "Vietnam", 
-    // img: 
-    //  "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-    img:v,
+    type:"video",
+    media:"https://res.cloudinary.com/dxujaqowe/video/upload/v1780218408/v_ljwngg.mp4",
     label:"Hidden Gem of Asia",
   },
   { 
     name: "Bali", 
-    // img: 
-    //   "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
-    img:bali,
+    type:"video",
+    media:"https://res.cloudinary.com/dxujaqowe/video/upload/v1780217831/Bali_qbzs1c.mp4",
     label:"Island of Gods",
   },
   { 
     name: "Paris", 
-    // img: 
-    //   "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
-    img:paris,
+    type:"video",
+     media:"https://res.cloudinary.com/dxujaqowe/video/upload/v1780218263/paris_dz9or3.mp4",
     label:"City of Love", 
   },
   { 
     name: "Maldives", 
-    // img: 
-    //   "https://images.unsplash.com/photo-1501117716987-c8e1ecb210c3", 
-    img:maldives,
+    type:"video",
+    media:"https://res.cloudinary.com/dxujaqowe/video/upload/v1780218178/maldives_qizb32.mp4",
     label:"Tropical Paradise", 
 
   },
   { 
     name: "Goa", 
-    // img: 
-    //   "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-    img:Goa,
+    type:"video",
+    media:"https://res.cloudinary.com/dxujaqowe/video/upload/v1780217906/goa_epaf2k.mp4",
     label:"Beach Paradise", 
   },
   { 
     name: "Dubai", 
-    // img: 
-    //   "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
-    img: dubaiVideo,
+    type:"video",
+    media:"https://res.cloudinary.com/dxujaqowe/video/upload/v1780217916/dubai_m9xdtf.mp4",
     label:"Luxury Skyline Escape", 
 
   },
   { 
     name: "Kerala", 
-    // img: 
-    //   "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
-    img:Kerala,
+    type:"video",
+    media:"https://res.cloudinary.com/dxujaqowe/video/upload/v1780218085/kerala_i27ao4.mp4",
     label:"God’s Own Country",  
   },
   { 
     name: "Rajasthan", 
-    // img: 
-    // "https://images.unsplash.com/photo-1501117716987-c8e1ecb210c3",
-    img:Rajasthan,
+    type:"video",
+    media:"https://res.cloudinary.com/dxujaqowe/video/upload/v1780218346/Rajsthan_tgeife.mp4",
     label:"Royal Heritage City", 
   },
 
@@ -310,46 +290,40 @@ export const defaultData = [
 export const international = [
   {
     name: "Vietnam", 
-    // img: 
-    //  "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-    img:v,
+    type:"video",
+    media:"https://res.cloudinary.com/dxujaqowe/video/upload/v1780218408/v_ljwngg.mp4",
     label:"Hidden Gem of Asia",
   },
   { 
     name: "Bali", 
-    // img: 
-    //   "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
-    img:bali,
+    type:"video",
+    media:"https://res.cloudinary.com/dxujaqowe/video/upload/v1780217831/Bali_qbzs1c.mp4",
     label:"Island of Gods",
   },
   { 
     name: "Paris", 
-    // img: 
-    //   "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
-    img:paris,
+    type:"video",
+    media:"https://res.cloudinary.com/dxujaqowe/video/upload/v1780218263/paris_dz9or3.mp4",
     label:"City of Love", 
   },
   { 
     name: "Maldives", 
-    // img: 
-    //   "https://images.unsplash.com/photo-1501117716987-c8e1ecb210c3", 
-    img:maldives,
+    type:"video",
+    media:"https://res.cloudinary.com/dxujaqowe/video/upload/v1780218178/maldives_qizb32.mp4",
     label:"Tropical Paradise", 
 
   },
   {
     name: "Dubai", 
-    // img: 
-    //   "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
-    img: dubaiVideo,
+    type:"video",
+    media:"https://res.cloudinary.com/dxujaqowe/video/upload/v1780217916/dubai_m9xdtf.mp4",
     label:"Luxury Skyline Escape",
   },  
 
   { 
     name: "Singapore", 
-    // img: 
-    //   "https://images.unsplash.com/photo-1501117716987-c8e1ecb210c3",
-    img:singa,
+    type:"video",
+    media:"https://res.cloudinary.com/dxujaqowe/video/upload/v1780218373/singapore_kifews.mp4",
     label:"Futuristic City Escape", 
   },  
 ]
@@ -357,37 +331,32 @@ export const international = [
 export const domestic = [
   { 
     name: "Goa", 
-    // img: 
-    //   "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-    img:Goa,
+    type:"video",
+    media:"https://res.cloudinary.com/dxujaqowe/video/upload/v1780217906/goa_epaf2k.mp4",
     label:"Beach Paradise", 
   },
   { name: "Manali", 
-    // img:
-    //   "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-    img:manali,
+    type:"video",
+    media:"https://res.cloudinary.com/dxujaqowe/video/upload/v1780218243/manali_whs3lk.mp4",
     label:"Snowy Mountain Retreat", 
 
   },
   { 
     name: "Kerala", 
-    // img: 
-    //   "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
-    img:Kerala,
+    type:"video",
+    media:"https://res.cloudinary.com/dxujaqowe/video/upload/v1780218085/kerala_i27ao4.mp4",
     label:"God’s Own Country",  
   },
   { 
     name: "Rajasthan", 
-    // img: 
-    // "https://images.unsplash.com/photo-1501117716987-c8e1ecb210c3",
-    img:Rajasthan,
+    type:"video",
+    media:"https://res.cloudinary.com/dxujaqowe/video/upload/v1780218346/Rajsthan_tgeife.mp4",
     label:"Royal Heritage City", 
   },
   { 
     name: "Coorg", 
-    // img: 
-    // "https://images.unsplash.com/photo-1501117716987-c8e1ecb210c3",
-    img:coorg,
+    type:"video",
+    media:"https://res.cloudinary.com/dxujaqowe/video/upload/v1780217902/coorg_nfq1rb.mp4",
     label:"Cloudy Green Retreat", 
   },
-]
+] 

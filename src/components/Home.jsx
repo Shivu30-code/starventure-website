@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import videoBg from "../assets/home.mp4";
+// import videoBg from "../assets/home.mp4";
 import { MessageCircle, Plane,MapPinHouse } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import NavBar from "../components/NavBar";
 
 
 const useCounter = (end, duration = 2000) => {
@@ -34,6 +35,7 @@ const Home = () => {
   const navigate = useNavigate();
   const travelersData = useCounter(2000);
   const destinationsData = useCounter(50);
+  const homeVideo = "https://res.cloudinary.com/dxujaqowe/video/upload/v1780218069/home_akgcgn.mp4"
 
   const handleWhatsAppBooking = () => {
     const phoneNumber = "917874041324";
@@ -52,7 +54,10 @@ const Home = () => {
 
   return (
     <>
-      <div className="h-screen flex items-center justify-center relative overflow-hidden">
+        <NavBar />
+
+      {/* <div className="h-screen flex items-center justify-center relative overflow-hidden"> */}
+      <div className="min-h-screen flex items-center justify-center relative overflow-hidden py-24 md:py-0">
 
         {/* <img
           src={home}
@@ -66,14 +71,14 @@ const Home = () => {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src={videoBg} type="video/mp4" />
+          <source src={homeVideo} type="video/mp4" />
         </video>
 
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
 
         <div className="relative z-10 text-center max-w-4xl px-6 text-white">
 
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2  bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full mb-6">
             <Plane size={16} />
             <span className="text-sm tracking-wide">
               Trusted by 2500+ Travelers
@@ -115,11 +120,12 @@ const Home = () => {
 
           </div>
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-5">
+          {/* <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-5"> */}
+          <div className="mt-6 md:mt-12 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
 
             <div
               className={`bg-white/10 backdrop-blur-md border border-white/20 
-              rounded-2xl px-6 py-5 transition-all duration-700
+              rounded-2xl px-5 py-3 md:px-6 md:py-5 transition-all duration-700
               ${travelersData.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}
               hover:-translate-y-1 hover:scale-[1.04]
               hover:border-yellow-400/60 hover:shadow-[0_0_30px_rgba(250,204,21,0.3)]`}
@@ -141,7 +147,7 @@ const Home = () => {
 
             <div
               className={`bg-white/10 backdrop-blur-md border border-white/20 
-              rounded-2xl px-6 py-5 transition-all duration-700
+              rounded-2xl px-5 py-3 md:px-6 md:py-5 transition-all duration-700
               ${destinationsData.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}
               hover:-translate-y-1 hover:scale-[1.04]
               hover:border-sky-400/60 hover:shadow-[0_0_30px_rgba(56,189,248,0.3)]`}

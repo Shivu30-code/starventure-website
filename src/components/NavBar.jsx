@@ -1,7 +1,25 @@
 import React, { useState, useRef, useEffect } from "react";
 import star from "../assets/logo.png";
-import { Search, Menu, ChevronDown } from "lucide-react";
+// import { Search, Menu, ChevronDown } from "lucide-react";
 import { NavLink, useNavigate } from "react-router-dom";
+// imports me ye add karo
+import {
+  Search,
+  Menu,
+  ChevronDown,
+  ChevronRight,
+  X,
+  Plane,
+  Bus,
+  Briefcase,
+  Globe2,
+  Phone,
+  Mail,
+  MessageCircle,
+  CalendarDays,
+  ArrowUpRight,
+  ArrowRight
+} from "lucide-react";
 
 const NavBar = () => {
   const [showTourism, setShowTourism] = useState(false);
@@ -124,7 +142,8 @@ const NavBar = () => {
   };
 
   return (
-    <div className="w-full sticky top-0 z-[9999] bg-white border-b shadow-sm">
+    // <div className="w-full sticky top-0 z-[9999] bg-white border-b shadow-sm">
+    <div className="w-full absolute top-0 left-0 z-[9999] bg-transparent">
       <div className="w-full  flex items-center justify-between px-4 py-3">
         <div className="md:hidden">
           <div onClick={() => setMenuOpen(true)} className="p-2 cursor-pointer text-[#272727]">
@@ -140,7 +159,7 @@ const NavBar = () => {
           <input
             type="text"
             placeholder={`Search ${placeholder}`}
-            className="w-full py-2 pl-9 pr-3 rounded-full text-gray-80 font-medium bg-white/90
+            className="w-full py-2 pl-9 pr-3 rounded-full text-black text-gray-80 font-medium bg-white/90
             backdrop-blur-md text-sm outline-none border border-white/30 shadow-lg focus:ring-2
             focus:ring-cyan-400 focus:border-cyan-400 transition-all duration-300 placeholder:text-gray-400"
           />
@@ -159,7 +178,8 @@ const NavBar = () => {
           className="h-15 w-15 ml-25 hidden md:block" 
         />
 
-        <div className="hidden md:flex items-center gap-6 text-sm font-semibold text-black">
+        {/* <div className="hidden md:flex items-center gap-6 text-sm font-semibold text-black"> */}
+        <div className="hidden md:flex items-center gap-6 text-sm font-semibold text-white">
 
           <div className="relative w-56">
             <Search
@@ -176,7 +196,7 @@ const NavBar = () => {
                   handleSearch();
                 }
               }}
-              className="w-full py-2 pl-9 pr-3 rounded-full text-gray-80 font-medium bg-white/90
+              className="w-full py-2 pl-9 pr-3 rounded-full text-black text-gray-80 font-medium bg-white/90
               backdrop-blur-md text-sm outline-none border border-white/30 shadow-lg focus:ring-2
               focus:ring-cyan-400 focus:border-cyan-400 transition-all duration-300 placeholder:text-gray-400"
             />
@@ -302,7 +322,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      {menuOpen && (
+      {/* {menuOpen && (
         <>
           <div
             className="fixed inset-0 bg-black/40 z-[9998]"
@@ -423,6 +443,251 @@ const NavBar = () => {
               <NavLink to="/immigration">IMMIGRATION</NavLink>
             </div>
 
+          </div>
+        </>
+      )} */}
+      {menuOpen && (
+        <>
+          <div
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[9998]"
+            onClick={() => setMenuOpen(false)}
+          ></div>
+
+          <div className="fixed top-0 left-0 h-full w-[88%] max-w-[360px] 
+            bg-gradient-to-b from-[#061827] via-[#071d33] to-[#020617]
+            text-white z-[9999] shadow-2xl px-6 py-6 overflow-y-auto
+            border-r border-yellow-400/30">
+
+            <button
+              onClick={() => setMenuOpen(false)}
+              className="absolute top-5 right-5 w-10 h-10 rounded-full bg-white/10 
+              flex items-center justify-center hover:bg-yellow-400 hover:text-black transition"
+            >
+              <X size={24} />
+            </button>
+
+            <div className="text-center mt-8 mb-10">
+              <img src={star} alt="logo" className="h-24 w-24 mx-auto object-contain" />
+              {/* <h2 className="text-4xl font-bold mt-2">Star Venture</h2> */}
+              <p className="text-yellow-400 text-sm tracking-[4px] mt-2">
+                EXPLORE • TRAVEL • SUCCEED
+              </p>
+            </div>
+
+            <div className="space-y-4">
+
+              <div>
+                <button
+                  onClick={() => setMobileTourism(!mobileTourism)}
+                  className="w-full flex items-center justify-between px-5 py-4 
+                  rounded-2xl bg-white/10 border border-white/10 
+                  hover:border-yellow-400/60 hover:bg-white/15 transition"
+                >
+                  <div className="flex items-center gap-4">
+                    <Plane className="text-yellow-400" size={30} />
+                    <span className="text-lg font-semibold">TOURISM</span>
+                  </div>
+                  {
+                    mobileTourism ? (
+                      <ArrowRight size={22} className="text-yellow-400" />
+                    ) : (
+                      <ArrowUpRight size={22} className="text-yellow-400" />
+                    )
+                  }
+                </button>
+
+                {mobileTourism && (
+                  <div className="mt-3 ml-4 space-y-3 border-l border-yellow-400/30 pl-4">
+
+                    <button
+                      onClick={() => setMobileDomestic(!mobileDomestic)}
+                      className="w-full flex justify-between text-gray-200"
+                    >
+                      Domestic Tours
+                      {
+                        mobileDomestic ? (
+                          <ArrowRight size={16} className="text-yellow-400" />
+                        ) : (
+                          <ArrowUpRight size={16} className="text-yellow-400" />
+                        )
+                      }
+                    </button>
+
+                    {mobileDomestic && (
+                      <div className="grid gap-2 text-sm text-gray-300">
+                        <p>Goa <span className="bg-red-200 text-red-700 text-[15px] px-2 rounded-full">TRENDING</span></p>
+                        <p>Kashmir <span className="bg-pink-200 text-pink-700 text-[15px] px-2 rounded-full">HONEYMOON</span></p>
+                        <p>Manali</p>
+                        <p>Rajasthan</p>
+                        <p>Kerala</p>
+                        <p>Andaman & Nicobar Island</p>
+                        <p>Udaipur</p>
+                        <p>Shimla</p>
+                        <p>Lakswadeep</p>
+                        <p>Darjeeling</p>
+                        <p>Munnar</p>
+                        <p>Rishikesh <span className="bg-purple-200 text-purple-700 text-[15px] px-2 rounded-full">ADVENTURE</span></p>
+                        <p
+                          onClick={() => {
+                            navigate("/domesticTours");
+                            setMenuOpen(false);
+                          }}
+                          className="text-yellow-400 font-semibold cursor-pointer"
+                        >
+                          Explore More →
+                        </p>
+                      </div>
+                    )}
+
+                    <button
+                      onClick={() => setMobileInternational(!mobileInternational)}
+                      className="w-full flex justify-between text-gray-200"
+                    >
+                      International Tours 
+                      {
+                        mobileInternational ? (
+                          <ArrowRight size={16} className="text-yellow-400" />
+                        ) : (
+                          <ArrowUpRight size={16} className="text-yellow-400" />
+                        )
+                      }
+                    </button>
+
+                    {mobileInternational && (
+                      <div className="grid gap-2 text-sm text-gray-300">
+                        <p>Dubai <span className="bg-red-200 text-red-700 text-[15px] px-2 rounded-full">TRENDING</span></p>
+                        <p>Maldives <span className="bg-pink-200 text-pink-700 text-[15px] px-2 rounded-full">HONEYMOON</span></p>
+                        <p>Thailand</p>
+                        <p>Singapore</p>
+                        <p>Bali <span className="bg-purple-200 text-purple-700 text-[15px] px-2 rounded-full">POPULAR</span></p>
+                        <p>Europe</p>
+                        <p>Switzerland</p>
+                        <p>Sweden</p>
+                        <p>Vitenam</p>
+                        <p>Srilanka</p>
+                        <p>Australia</p>
+                        <p>Mauritius</p>
+                        <p>South-Africa <span className="bg-yellow-200 text-yellow-700 text-[15px] px-2 rounded-full">SAFRI</span></p>
+                        <p
+                          onClick={() => {
+                            navigate("/internationalTours");
+                            setMenuOpen(false);
+                          }}
+                          className="text-yellow-400 font-semibold cursor-pointer"
+                        >
+                          Explore More →
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+
+              <NavLink
+                to="/transport"
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center justify-between px-5 py-4 rounded-2xl 
+                bg-white/10 border border-white/10 hover:border-yellow-400/60 transition"
+              >
+                <div className="flex items-center gap-4">
+                  <Bus className="text-yellow-400" size={30} />
+                  <span className="text-lg font-semibold">TRANSPORT</span>
+                </div>
+                <ArrowUpRight />
+              </NavLink>
+
+              <NavLink
+                to="/employment"
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center justify-between px-5 py-4 rounded-2xl 
+                bg-white/10 border border-white/10 hover:border-yellow-400/60 transition"
+              >
+                <div className="flex items-center gap-4">
+                  <Briefcase className="text-yellow-400" size={30} />
+                  <span className="text-lg font-semibold">EMPLOYMENT</span>
+                </div>
+                <ArrowUpRight />
+              </NavLink>
+
+              <NavLink
+                to="/immigration"
+                onClick={() => setMenuOpen(false)}
+                className="flex items-center justify-between px-5 py-4 rounded-2xl 
+                bg-white/10 border border-white/10 hover:border-yellow-400/60 transition"
+              >
+                <div className="flex items-center gap-4">
+                  <Globe2 className="text-yellow-400" size={30} />
+                  <span className="text-lg font-semibold">IMMIGRATION</span>
+                </div>
+                <ArrowUpRight />
+              </NavLink>
+            </div>
+
+            <div className="flex items-center gap-3 my-8">
+              <div className="h-px flex-1 bg-white/15"></div>
+              <span className="text-yellow-400">✦</span>
+              <div className="h-px flex-1 bg-white/15"></div>
+            </div>
+
+            <h3 className="text-gray-400 text-lg font-semibold mb-4">Contact Us</h3>
+
+            <div className="space-y-4">
+              <a
+                href="https://wa.me/917874041324"
+                className="flex items-center justify-between"
+              >
+                <div className="flex items-center gap-4">
+                  <span className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                    <MessageCircle className="text-yellow-400" />
+                  </span>
+                  <span className="font-semibold">WhatsApp</span>
+                </div>
+                <ChevronRight />
+              </a>
+
+              <a
+                href="tel:+917874041324"
+                className="flex items-center justify-between"
+              >
+                <div className="flex items-center gap-4">
+                  <span className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                    <Phone className="text-yellow-400" />
+                  </span>
+                  <span className="font-semibold">Call Us</span>
+                </div>
+                <ChevronRight />
+              </a>
+
+              <a
+                href="mailto:admin@starventuregroups.com"
+                className="flex items-center justify-between"
+              >
+                <div className="flex items-center gap-4">
+                  <span className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                    <Mail className="text-yellow-400" />
+                  </span>
+                  <span className="font-semibold">Email Us</span>
+                </div>
+                <ChevronRight />
+              </a>
+            </div>
+
+            <button
+              onClick={() => {
+                setMenuOpen(false);
+                navigate("/contact");
+              }}
+              className="w-full mt-8 mb-4 py-4 rounded-2xl 
+              bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-300 
+              text-black font-bold text-lg flex items-center justify-between px-6
+              shadow-[0_0_25px_rgba(250,204,21,0.35)]"
+            >
+              <span className="flex items-center gap-3">
+                <CalendarDays />
+                BOOK NOW
+              </span>
+              <ChevronRight />
+            </button>
           </div>
         </>
       )}
